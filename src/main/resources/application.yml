@@ -1,0 +1,35 @@
+datahub:
+  clients:
+      default:
+        accessId: dMyqwerxgivwI_test_id
+        accessKey: UrfsfvDkv_test_key_fi6iQEyRtL959jgjN
+        endpoint: http://datahub.cn.gov.cn
+  topics:
+    project: gyb_prod_read
+    topic1: topic_name_1
+    topic2: topic_name_2
+    topic3: topic_name_3
+datahub2:
+  clients:
+      default:
+        accessId: dwgybrwrwid_test_iwrwXQrtgybdd
+        accessKey: qweqDGDsdgd_key_kkhsQddgdhjhjkhN
+        endpoint: http://datahub.cn
+  topics:
+    project: gyb_prod_write
+    topic1: write_datahub_topic_name1
+    topic2: write_datahub_topic_name2
+    topic3: write_datahub_topic_name3
+Spring:
+  activemq:
+      broker-url: tcp://ip:61616
+      user: admin
+      password: admin
+      close-timeout: 15s   #
+      in-memory: true      #
+      non-blocking-redelivery: false  #
+      send-timeout: 0     #
+      queue-name: active.queue
+      topic-name1: topic_name_test
+      topic-name2: topic_name2
+      topic-name3: topic_name3
